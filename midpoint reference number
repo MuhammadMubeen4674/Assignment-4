@@ -1,0 +1,28 @@
+#include<iostream> 
+using namespace std; 
+int main() { 
+int a, b; 
+// Input range 
+cout << "Enter two numbers (a and b): "; 
+cin >> a >> b; 
+// Ensure a is less than b 
+if (a > b) { 
+cout << "The first number should be smaller than or equal to the second number. Please run the program again.\n"; 
+return 0; 
+} 
+// Calculate midpoint 
+int midpoint = (a + b) / 2; 
+// Compare numbers to the midpoint 
+for (int i = a; i <= b; i++) { 
+if (i < midpoint) { 
+cout << i << " is less than the midpoint.\n"; 
+} 
+else if (i > midpoint) { 
+cout << i << " is greater than the midpoint.\n"; 
+} 
+else { 
+cout << i << " is equal to the midpoint.\n"; 
+} 
+} 
+return 0; 
+}
