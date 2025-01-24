@@ -1,0 +1,24 @@
+#include<iostream> 
+#include<cstdlib>  // For rand() and srand() 
+#include<ctime>    // For time() 
+int main() { 
+srand(time(0)); // Seed random number generator with current time 
+int randomNumber = rand() % 100 + 1; // Random number between 1 and 100 
+int guess, attempts = 0; 
+std::cout << "Welcome to the Lottery Game!\n"; 
+std::cout << "Guess the number (1 to 100): "; 
+while (true) { 
+std::cin >> guess; 
+attempts++; 
+if (guess == randomNumber) { 
+std::cout << "Congratulations! You guessed " << randomNumber << " in " << attempts << " attempts.\n"; 
+break; 
+} 
+else if (guess < randomNumber) { 
+std::cout << "Too low! Try again: "; 
+} 
+else { 
+std::cout << "Too high! Try again: "; 
+} 
+} 
+return 0; 
