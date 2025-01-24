@@ -1,0 +1,15 @@
+#include<iostream> 
+using namespace std; 
+int main() { 
+int n, sum = 0; 
+// Prompt user for input 
+cout << "Enter the number to calculate sum of odd numbers: "; 
+cin >> n;  // Read input from user 
+// Calculate the sum of all odd numbers from 1 to n 
+for (int i = 1; i <= n; i += 2) { 
+sum += i;  // Add odd numbers 
+} 
+// Display the result 
+cout << "The sum of all odd numbers between 1 and " << n << " is: " << sum << endl; 
+return 0; 
+} 
