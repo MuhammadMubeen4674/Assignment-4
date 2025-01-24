@@ -1,0 +1,16 @@
+#include <iostream> 
+using namespace std; 
+int main() { 
+int number, reverse = 0, sum = 0; 
+cout << "Enter your account number: "; 
+cin >> number; 
+while (number > 0) { 
+int digit = number % 10; 
+reverse = reverse * 10 + digit; 
+sum += digit; 
+number /= 10; 
+} 
+cout << "Reversed account number: " << reverse << endl; 
+cout << "Sum of digits: " << sum << endl; 
+return 0; 
+} 
