@@ -1,0 +1,21 @@
+#include<iostream> 
+using namespace std; 
+int main() { 
+int x, range; 
+// Input number and range 
+cout << "Enter the number: "; 
+cin >> x; 
+cout << "Enter the range: "; 
+cin >> range; 
+// Validate range 
+if (range <= 0) { 
+cout << "Please enter a positive integer greater than 0 for the range." << endl; 
+return 0; 
+} 
+// Print multiplication table 
+cout << "\nMultiplication Table for " << x << ":" << endl; 
+for (int i = 1; i <= range; ++i) { 
+cout << x << " x " << i << " = " << x * i << endl; 
+} 
+return 0; 
+}
