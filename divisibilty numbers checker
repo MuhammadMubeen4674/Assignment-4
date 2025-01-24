@@ -1,0 +1,19 @@
+#include<iostream> 
+using namespace std; 
+int main() { 
+int n, count = 0; 
+// Input a positive number 
+cout << "Enter a positive number n: "; 
+cin >> n; 
+if (n <= 0) { 
+cout << "Please enter a positive number." << endl; 
+return 0; 
+} 
+cout << "Numbers divisible by 3 between 1 and " << n << ": "; 
+for (int i = 3; i <= n; i += 3) { // Increment by 3 
+cout << i << " "; 
+count++; 
+} 
+cout << "\nTotal count: " << count << endl; 
+return 0; 
+} 
